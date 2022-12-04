@@ -318,7 +318,7 @@ body .lock {
 */
 
 .no-webp .head {
-  background-image: url("./../images/background-header.png"); }
+  background-image: url("/images/background-header.png"); }
 
 .head {
   min-height: 193px;
@@ -1045,4 +1045,4 @@ body .lock {
   }
 }
 
-.webp .head { background-image: url(./../images/background-header.webp); }
+.webp .head { background-image: url(/images/background-header.webp); }
