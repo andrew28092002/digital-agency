@@ -1,0 +1,192 @@
+.head {
+  min-height: 193px;
+  background: url("./../images/background-header.png") no-repeat center center;
+  background-size: cover;
+}
+
+@media (min-width: 640px) {
+  .head {
+    min-height: 386px;
+  }
+}
+
+.top-slider {
+  &__item {
+    color: $whiteColor;
+    min-height: 193px;
+    text-align: center;
+  }
+  &__title {
+    font-family: "RobotoCondensed";
+    line-height: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: $whiteColor;
+    padding: 50px 0 28px;
+    text-transform: uppercase;
+    max-width: 243px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 61px;
+      height: 8px;
+      position: absolute;
+      background-color: $textColor;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    font-size: 0;
+    line-height: 18px;
+  }
+
+  .more__button {
+    display: none;
+    border: none;
+    background: $accentColor;
+    padding: 15px 45px;
+    color: $whiteColor;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Roboto";
+    font-weight: 500;
+    margin: 0 auto 113px;
+    text-transform: uppercase;
+  }
+
+  .slick-arrow {
+    width: 56px;
+    height: 56px;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+  }
+
+  .slick-next {
+    background: #f9f6e5;
+    top: calc(50% - 56px);
+  }
+
+  .slick-prev {
+    background: $accentColor;
+    bottom: calc(50% - 56px);
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    .slick-active {
+      button {
+        background-color: transparent;
+        border: 1px solid $buttonColor;
+      }
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      border: none;
+      background-color: $accentColor;
+      border-radius: 50%;
+      margin: 10px;
+      font-size: 0;
+      transition: 0.3s;
+    }
+  }
+
+  @media (min-width: 640px) {
+    &__item {
+      min-width: 386px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 50px 0 10px;
+      margin: 0 auto 30px;
+      max-width: 520px;
+    }
+
+    .slick-dots {
+      bottom: 50px;
+    }
+
+    .more__button {
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__item {
+      max-height: 465px;
+    }
+
+    &__title {
+      padding-top: 87px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__text {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 18px;
+      color: $whiteColor;
+      line-height: 20px;
+      margin: 0 auto 32px;
+      max-width: 674px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .top-slider {
+      &__item {
+        max-height: 618px;
+      }
+
+      &__title {
+        padding-top: 101px;
+        letter-spacing: 2px;
+      }
+
+      .slick-dots {
+        bottom: 80px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .top-slider {
+      &__item {
+        max-height: 668px;
+      }
+
+      &__title {
+        padding-top: 107px;
+        font-size: 96px;
+        line-height: 96px;
+        letter-spacing: 2px;
+      }
+
+      &__text {
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}

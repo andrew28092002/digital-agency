@@ -1,0 +1,268 @@
+.services {
+  padding: 25px 0 40px;
+  text-align: center;
+  position: relative;
+
+  &__title {
+    color: $accentColor;
+  }
+
+  &__descr {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $textColor;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__text,
+  &__item-text {
+    color: $defTextColor;
+  }
+
+  &__items {
+    margin: 40px auto;
+  }
+
+  &__item {
+    min-height: 310px;
+    padding: 13px;
+    border: 1px solid #f9f6e5;
+    box-sizing: border-box;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+
+  &__item-img {
+    margin: 48px 0 25px;
+  }
+
+  &__item-title {
+    font-family: "RobotoCondensed";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: $textColor;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__item-text {
+    font-family: "Dosis";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: $defTextColor;
+    margin-bottom: 17px;
+    margin-top: 30px;
+    display: none;
+  }
+
+  &__item-link {
+    font-family: "RobotoCondensed";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: $accentColor;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  &__item-inner {
+    height: 100%;
+  }
+
+  &__item-img {
+    margin-top: 70px;
+  }
+
+  &__item:hover {
+    .services__item-inner {
+      border: 4px solid $accentColor;
+      min-height: 277px;
+    }
+
+    .services__item-text,
+    .services__item-link {
+      display: block;
+    }
+
+    .services__item-img {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .services {
+    &__title {
+      &::after {
+        display: none;
+      }
+    }
+
+    &__descr {
+      font-size: 24px;
+      line-height: 24px;
+      position: relative;
+      padding-bottom: 33px;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        background: $accentColor;
+        width: 100px;
+        height: 8px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &__items {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      height: 100%;
+    }
+
+    &__item {
+      width: 50%;
+      min-height: 310px;
+
+      &:nth-child(2) {
+        border-top: 1px solid #f9f6e5;
+      }
+
+      &:nth-child(n + 2) {
+        border-left: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    padding-top: 40px;
+
+    &__descr {
+      padding-bottom: 38px;
+      margin-bottom: 34px;
+    }
+
+    &__text {
+      max-width: 607px;
+    }
+
+    &__item {
+      width: 50%;
+      min-height: 334px;
+
+      &:hover {
+        min-height: 288px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding-top: 50px;
+
+    &__descr {
+      text-align: left;
+
+      &::after {
+        left: 0;
+        margin: 0;
+      }
+    }
+
+    &__text {
+      text-align: left;
+    }
+
+    &__items {
+      margin-top: 11px;
+    }
+
+    &__item {
+      width: 25%;
+      min-height: 275px;
+      &:nth-child(3),
+      &:nth-child(4) {
+        border-top: 1px solid #f9f6e5;
+      }
+
+      &:nth-child(5) {
+        border-left: 1px solid #f9f6e5;
+      }
+
+      &:hover{
+        .services__item-inner{
+          min-height: 255px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services {
+    padding: 0;
+    margin: 0;
+    .container {
+      min-width: 1440px;
+    }
+
+    &__items{
+      margin: 0;
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      min-height: 258px;
+      width: 25%;
+      &:hover{
+        min-height: 255px;
+      }
+    }
+    &__head {
+      max-width: 393px;
+      margin-right: 28px;
+      margin-left: 62px;
+    }
+
+    // &__title{
+    //   margin-top: 10px;
+    // }
+
+    &__descr {
+      font-size: 24px;
+      line-height: 26px;
+      padding-bottom: 38px;
+      margin-bottom: 32px;
+    }
+
+    &__descr, &__text{
+      width: 351px;
+    }
+
+  }
+}

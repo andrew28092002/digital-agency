@@ -1,0 +1,71 @@
+.call {
+  width: 100%;
+  max-height: 301px;
+  background: $accentColor;
+  text-align: center;
+
+  &__title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: $whiteColor;
+    display: inline-block;
+    padding-top: 40px ;
+  }
+
+  &__text {
+    font-family: "RobotoCondensed";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $whiteColor;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    padding: 15px 16px;
+    background: #f9f6e5;
+    border-radius: 3px;
+    color: $accentColor;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    border: none;
+    border-radius: 3px;
+    margin: 40px auto;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 768px) {
+    &{
+        text-align: left;
+    }
+
+    &__box{
+        max-width: 408px;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px
+    }
+
+    &__title{
+        padding-top: 0;
+    }
+
+    &__btn{
+        margin: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__box{
+        max-width: 650px;
+    }
+  }
+}

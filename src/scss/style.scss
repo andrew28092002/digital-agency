@@ -1,0 +1,75 @@
+@use "sass:math";
+
+// Подключение шрифтов из папки "./src/fonts" =======================================================================================================================
+@import "config/fonts";
+
+// Подключение sass функций и миксинов =======================================================================================================================
+@import "config/functions";
+@import "config/mixins";
+
+// Подключение переменных =======================================================================================================================
+@import "config/vars";
+
+// Обнуление =======================================================================================================================
+@import "config/reset";
+
+// Подлючение кастомного скрола для всего сайта =======================================================================================================================
+@import "config/scrollbar";
+
+// Общие параметры, шаблоны(заготовки) и вспомагательные классы =======================================================================================================================
+@import "config/base";
+
+// Подключение стилей отдельных блоков и секций =======================================================================================================================
+@import "layout/header";
+@import "slider.scss";
+@import "layout/footer";
+@import "layout/call.scss";
+@import "libs/slick.scss";
+@import "layout/services.scss";
+
+.title {
+  font-family: "RobotoCondensed";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background: $accentColor;
+    width: 100px;
+    height: 8px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width: 760px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title{
+    text-align: left;
+  }
+}
+
