@@ -1,6 +1,8 @@
 .head {
   min-height: 193px;
-  background: url("./../images/background-header.png") no-repeat center center;
+  background: url("./../images/background-header.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
