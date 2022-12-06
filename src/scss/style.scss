@@ -26,6 +26,8 @@
 @import "layout/call.scss";
 @import "libs/slick.scss";
 @import "layout/services.scss";
+@import "layout/projects.scss";
+@import "layout/team.scss";
 
 .title {
   font-family: "RobotoCondensed";
@@ -36,7 +38,8 @@
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  text-align: center;
 
   &::after {
     content: " ";
@@ -58,18 +61,4 @@
   }
 }
 
-@media (min-width: 760px) {
-  .title {
-    font-size: 48px;
-    line-height: 56px;
-    text-transform: capitalize;
-    margin-bottom: 60px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .title{
-    text-align: left;
-  }
-}
 
