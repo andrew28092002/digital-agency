@@ -1401,13 +1401,13 @@ body .lock {
   }
 
   .project__item {
-    min-height: 243px;
-    min-width: 217px;
+    min-height: 268px;
+    min-width: 239px;
   }
 
   .project__item .project__img-inner {
-    min-width: 287px;
-    min-height: 256px;
+    min-width: 243px;
+    min-height: 217px;
   }
 
   .team {
