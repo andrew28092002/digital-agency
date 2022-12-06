@@ -697,9 +697,9 @@ body .lock {
 }
 
 .projects {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2b4074), to(rgba(43, 64, 116, 0)));
-  background: -o-linear-gradient(top, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
-  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2B4074), to(rgba(43, 64, 116, 0)));
+  background: -o-linear-gradient(top, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
+  background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
   position: relative;
 }
 
@@ -1108,9 +1108,9 @@ body .lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 
   .team .title {
@@ -1230,15 +1230,6 @@ body .lock {
     padding-bottom: 160px;
   }
 
-  .team .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .team .title {
     text-align: left;
   }
@@ -1343,15 +1334,6 @@ body .lock {
   .team {
     margin-top: 20px;
     padding-bottom: 160px;
-  }
-
-  .team .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .team .title {
