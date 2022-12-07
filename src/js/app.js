@@ -1,7 +1,6 @@
 import $ from "jquery";
 import "slick-carousel";
 import Masonry from "masonry-layout";
-import 'imagesloaded'
 
 //Слайдер под шапкой
 $(".top-slider").slick({
@@ -23,11 +22,9 @@ $(".top-slider").slick({
 });
 
 // Таблица masonry для блока "новости"
-const container = document.querySelector(".news__inner");
+// const container = document.querySelector(".news__inner");
 
-imagesLoaded(document.querySelector(".news__inner"), () => {
-  const masonry = new Masonry(container, {
-    columnWidth: 270,
-    itemSelector: ".news__item",
-  });
-});
+// const masonry = new Masonry(container, {
+//   columnWidth: ".news__item",
+//   itemSelector: ".news__item",
+// });
