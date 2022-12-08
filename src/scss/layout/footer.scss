@@ -1,18 +1,246 @@
 .footer {
-  padding: rem(20) 0;
-  background: $blackColor;
-  // .footer__container
-  &__container {
+  background: $accentColor;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $accentColor;
+    padding: 0 74px 5px;
+    border-radius: 4px;
+  }
+
+  &__text {
+    margin-top: 95px;
     display: flex;
+    justify-content: center;
+
+    h4 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 2px;
+      max-width: 274px;
+      color: $whiteColor;
+      text-align: center;
+    }
+  }
+
+  &__social-item {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social {
+    margin-top: 43px;
+    text-align: center;
+    i {
+      color: #fff;
+      font-size: 25px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    @include media(510) {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-flow: row wrap;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  &__contact-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+
+    h5,
+    .footer__contact-text,
+    a {
+      color: $whiteColor;
+    }
+
+    h5 {
+      font-family: "RobotoCondensed";
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #f9f6e5;
+      margin-bottom: 18px;
+    }
+
+    .footer__contact-text {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      position: relative;
+    }
+
+    .footer__contact-text a:hover {
+      a::after {
+        width: 100%;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 63px;
     }
   }
 }
 
+.href {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background: #F9F6E5;
 
-.i{
-  width: 23px;
+  h6 {
+    font-family: "RobotoCondensed";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+
+    color: #4a4a4a;
+
+    margin: 56px auto 21px;
+    transition: 0.4s;
+  }
+
+  i {
+    color: $accentColor;
+    margin: 0 auto 21px;
+    transition: 0.4s;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer {
+    padding-bottom: 130px;
+
+    &__text {
+      margin-top: 84px;
+
+      h4 {
+        font-size: 24px;
+        line-height: 26px;
+        max-width: 547px;
+        text-align: center;
+      }
+    }
+
+    &__social-item {
+      width: 25%;
+      padding: 21px 68px;
+      border: 1px solid #7ebf84;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+
+      &:nth-child(1) {
+        border-left: none;
+        border-right: none;
+      }
+
+      &:nth-child(4) {
+        border-left: none;
+        border-right: none;
+      }
+
+      &:nth-child(2) {
+        border-right: none;
+      }
+    }
+
+    &__social {
+      margin-top: 40px;
+      text-align: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__contact-item {
+      width: 50%;
+
+      &:last-child {
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  .href {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    padding: 4px 0;
+
+    h6 {
+      margin: 0;
+      margin-right: 24px;
+      transition: 0;
+    }
+
+    i {
+      margin: 0;
+      margin-right: 15px;
+      transition: 0;
+    }
+  }
+}
+
+@media (min-width: 1028px) {
+  .footer {
+    &__text {
+      h4 {
+        font-size: 36px;
+        line-height: 32px;
+        max-width: 690px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding-bottom: 80px;
+
+    &__text{
+      margin-top: 160px;
+    }
+
+    &__social{
+      margin-top: 80px;
+    }
+
+    &__contact{
+      margin-top: 60px;
+    }
+
+    &__contact-item {
+      width: 25%;
+    }
+  }
+
+  .href{
+    i{
+      margin-right: 80px;
+    }
+  }
 }
